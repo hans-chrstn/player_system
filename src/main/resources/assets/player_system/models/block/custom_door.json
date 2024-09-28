@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/door",
+  "textures": {
+    "top": "player_system:block/custom_door_top",
+    "bottom": "player_system:block/custom_door_bottom",
+    "side": "player_system:block/custom_door_top"
+  }
+}
