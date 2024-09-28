@@ -17,19 +17,19 @@
 	"entrypoints": {
 		"main": [
 			{
-				"value": "mishima.player_system.Player_system",
+				"value": "mishima.player_system.PlayerSystem",
 				"adapter": "kotlin"
 			}
 		],
 		"client": [
 			{
-				"value": "mishima.player_system.Player_systemClient",
+				"value": "mishima.player_system.PlayerSystemClient",
 				"adapter": "kotlin"
 			}
 		],
 		"fabric-datagen": [
 			{
-				"value": "mishima.player_system.Player_systemDataGenerator",
+				"value": "mishima.player_system.PlayerSystemDataGenerator",
 				"adapter": "kotlin"
 			}
 		]
