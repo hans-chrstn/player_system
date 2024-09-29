@@ -29,8 +29,8 @@ object CustomItems {
     val CASTLE_DOOR_KEY: Item = register(Item(Item.Settings()), "castle_door_key")
 
     val KASAKA_VENOM_FANG_DAGGER: Item = register(VenomousDagger(CustomToolMaterial.KASAKA,
-        4,
-        -1f,
+        3,
+        1f,
         Item.Settings().maxCount(1),
         "A Dagger made out of Kasaka's Venomous Fang",
         Formatting.GOLD,

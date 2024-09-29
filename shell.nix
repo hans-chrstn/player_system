@@ -16,6 +16,8 @@ in
 pkgs.mkShell {
   nativeBuildInputs = with pkgs; [
     jetbrains.idea-community
+    aseprite
+    blockbench
   ];
 
   buildInputs = libs;
@@ -23,8 +25,13 @@ pkgs.mkShell {
   shellHook = ''
     alias ii='${pkgs.jetbrains.idea-community}/bin/idea-community'
     alias yy='yazi'
+    alias aa='aseprite'
+    alias bb='blockbench'
+
 
     echo "Type 'ii' to launch Intellij"
     echo "Type 'yy' to launch Yazi"
+    echo "Type 'aa' to launch Aseprite"
+    echo "Type 'bb' to launch Blockbench"
   '';
 }
