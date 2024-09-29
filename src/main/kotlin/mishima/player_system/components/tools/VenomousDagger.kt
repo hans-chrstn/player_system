@@ -2,6 +2,7 @@ package mishima.player_system.components.tools
 
 import mishima.player_system.components.CustomEffects
 import mishima.player_system.utils.tools.CustomSwordItem
+import mishima.player_system.utils.tools.TooltipEntry
 import net.minecraft.entity.EquipmentSlot
 import net.minecraft.entity.LivingEntity
 import net.minecraft.entity.effect.StatusEffectInstance
@@ -15,9 +16,8 @@ class VenomousDagger(
     attackDamage: Int,
     attackSpeed: Float,
     settings: Settings,
-    tooltipKey: String,
-    formatting: Formatting
-): CustomSwordItem(material, attackDamage, attackSpeed, settings, tooltipKey, formatting) {
+    tooltipEntries: List<TooltipEntry>
+): CustomSwordItem(material, attackDamage, attackSpeed, settings, tooltipEntries) {
     override fun postHit(stack: ItemStack, target: LivingEntity, attacker: LivingEntity): Boolean {
         stack.damage(1, attacker) { e: LivingEntity ->
             e.sendEquipmentBreakStatus(

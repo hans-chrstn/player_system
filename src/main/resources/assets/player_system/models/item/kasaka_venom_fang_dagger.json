@@ -1,7 +1,99 @@
 {
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "player_system:item/kasaka_venom_fang_dagger",
-    "layer1": "player_system:item/kasaka_venom_fang_dagger_layer"
-  }
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"layer0": "player_system:item/kasaka_venom_fang_dagger"
+	},
+	"elements": [
+		{
+			"from": [6, 0, 6],
+			"to": [10, 1, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 1, 8]},
+			"faces": {
+				"north": {"uv": [7, 6, 9, 6.5], "texture": "#layer0"},
+				"east": {"uv": [7, 6.5, 9, 7], "texture": "#layer0"},
+				"south": {"uv": [7, 7, 9, 7.5], "texture": "#layer0"},
+				"west": {"uv": [4, 7.5, 6, 8], "texture": "#layer0"},
+				"up": {"uv": [8, 2, 6, 0], "texture": "#layer0"},
+				"down": {"uv": [8, 2, 6, 4], "texture": "#layer0"}
+			}
+		},
+		{
+			"from": [7, 1, 7],
+			"to": [9, 4, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 2, 8]},
+			"faces": {
+				"north": {"uv": [4, 6, 5, 7.5], "texture": "#layer0"},
+				"east": {"uv": [6, 4, 7, 5.5], "texture": "#layer0"},
+				"south": {"uv": [5, 6, 6, 7.5], "texture": "#layer0"},
+				"west": {"uv": [6, 5.5, 7, 7], "texture": "#layer0"},
+				"up": {"uv": [8, 8.5, 7, 7.5], "texture": "#layer0"},
+				"down": {"uv": [1, 8, 0, 9], "texture": "#layer0"}
+			}
+		},
+		{
+			"from": [6, 4, 5],
+			"to": [10, 5, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 5, 8]},
+			"faces": {
+				"north": {"uv": [8, 0, 10, 0.5], "texture": "#layer0"},
+				"east": {"uv": [7, 4, 10, 4.5], "texture": "#layer0"},
+				"south": {"uv": [8, 0.5, 10, 1], "texture": "#layer0"},
+				"west": {"uv": [7, 4.5, 10, 5], "texture": "#layer0"},
+				"up": {"uv": [6, 3, 4, 0], "texture": "#layer0"},
+				"down": {"uv": [6, 3, 4, 6], "texture": "#layer0"}
+			}
+		},
+		{
+			"from": [7, 5, 7],
+			"to": [9, 21, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 6, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 1, 8], "texture": "#layer0"},
+				"east": {"uv": [1, 0, 2, 8], "texture": "#layer0"},
+				"south": {"uv": [2, 0, 3, 8], "texture": "#layer0"},
+				"west": {"uv": [3, 0, 4, 8], "texture": "#layer0"},
+				"up": {"uv": [8, 6, 7, 5], "texture": "#layer0"},
+				"down": {"uv": [7, 7, 6, 8], "texture": "#layer0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 3.25, 0]
+		}
+	},
+	"groups": [
+		{
+			"name": "main",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [
+				{
+					"name": "pommel",
+					"origin": [8, 8, 8],
+					"color": 0,
+					"children": [0]
+				},
+				{
+					"name": "handle",
+					"origin": [8, 8, 8],
+					"color": 0,
+					"children": [1]
+				},
+				{
+					"name": "guard",
+					"origin": [8, 8, 8],
+					"color": 0,
+					"children": [2]
+				},
+				{
+					"name": "blade",
+					"origin": [8, 8, 8],
+					"color": 0,
+					"children": [3]
+				}
+			]
+		}
+	]
 }

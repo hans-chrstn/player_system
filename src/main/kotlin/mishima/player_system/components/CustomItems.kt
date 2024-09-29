@@ -3,6 +3,7 @@ package mishima.player_system.components
 import mishima.player_system.PlayerSystem
 import mishima.player_system.components.tools.VenomousDagger
 import mishima.player_system.utils.tools.CustomToolMaterial
+import mishima.player_system.utils.tools.TooltipEntry
 import net.minecraft.entity.effect.StatusEffectInstance
 import net.minecraft.entity.effect.StatusEffects
 import net.minecraft.item.FoodComponent
@@ -32,8 +33,11 @@ object CustomItems {
         3,
         1f,
         Item.Settings().maxCount(1),
-        "A Dagger made out of Kasaka's Venomous Fang",
-        Formatting.GOLD,
+        listOf(
+            TooltipEntry("A Dagger made out of Kasaka's Fang", Formatting.GOLD),
+            TooltipEntry("", Formatting.WHITE),
+            TooltipEntry("Has a 30% chance to use paralysis", Formatting.RED)
+        ),
     ), "kasaka_venom_fang_dagger")
 
 
