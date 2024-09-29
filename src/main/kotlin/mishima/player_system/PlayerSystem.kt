@@ -1,8 +1,8 @@
 package mishima.player_system
 
 import mishima.player_system.components.CustomBlocks
+import mishima.player_system.components.CustomEffects
 import mishima.player_system.components.CustomItems
-import mishima.player_system.components.effects.CustomEffects
 import mishima.player_system.utils.Utils
 import net.fabricmc.api.ModInitializer
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents
@@ -24,9 +24,19 @@ object PlayerSystem : ModInitializer {
 		CustomItems.initialize()
 		CustomBlocks.initialize()
 		CustomEffects.initialize()
+
+		val items = listOf(
+			CustomItems.RAIKAN_FANG,
+			CustomItems.KASAKA_FANG,
+			CustomItems.KASAKA_VENOM,
+			CustomItems.KASAKA_VENOM_FANG_DAGGER,
+			CustomItems.DUNGEON_KEY,
+			CustomItems.DEMON_CASTLE_KEY,
+			CustomItems.CASTLE_DOOR_KEY,
+		)
+
 		ItemGroupEvents.modifyEntriesEvent(Utils.MOD_ITEM_GROUP_KEY).register { itemGroup ->
-			itemGroup.add(CustomItems.RASAKA_FANG)
-			itemGroup.add(CustomItems.RASAKA_VENOM_FANG_DAGGER)
+			items.forEach { itemGroup.add(it)}
 		}
 	}
 }

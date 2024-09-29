@@ -1,6 +1,6 @@
 package mishima.player_system.components.tools
 
-import mishima.player_system.components.effects.CustomEffects
+import mishima.player_system.components.CustomEffects
 import mishima.player_system.utils.tools.CustomSwordItem
 import net.minecraft.entity.EquipmentSlot
 import net.minecraft.entity.LivingEntity

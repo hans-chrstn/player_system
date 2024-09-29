@@ -15,7 +15,7 @@ object Utils {
         Registries.ITEM_GROUP.getKey(), Identifier.of(
         PlayerSystem.MOD_ID, "item_group"))
     val MOD_ITEM_GROUP: ItemGroup = FabricItemGroup.builder()
-        .icon { ItemStack(CustomItems.RASAKA_FANG) }
+        .icon { ItemStack(CustomItems.KASAKA_FANG) }
         .displayName(Text.translatable("itemGroup.${PlayerSystem.MOD_ID}"))
         .build()
 }

@@ -1,4 +1,4 @@
-package mishima.player_system.components.effects
+package mishima.player_system.components
 
 import mishima.player_system.PlayerSystem
 import net.minecraft.entity.attribute.EntityAttributeModifier

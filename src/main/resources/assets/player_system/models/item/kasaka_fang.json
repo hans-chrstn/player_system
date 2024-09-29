@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "player_system:item/rasaka_fang"
+    "layer0": "player_system:item/kasaka_fang"
   }
 }

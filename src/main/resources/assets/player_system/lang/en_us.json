@@ -1,4 +1,9 @@
 {
-  "item.player_system.rasaka_venom_fang_dagger": "Rasaka's Venom Fang Dagger",
-  "item.player_system.rasaka_fang": "Rasaka's Fang"
+  "item.player_system.kasaka_venom_fang_dagger": "Kasaka's Venom Fang Dagger",
+  "item.player_system.kasaka_fang": "Kasaka's Fang",
+  "item.player_system.raikan_fang": "Raikan Fang",
+  "item.player_system.kasaka_venom": "Kasaka's Venom Gland",
+  "item.player_system.dungeon_key": "Dungeon Key",
+  "item.player_system.demon_castle_key": "Demon Castle Key",
+  "item.player_system.castle_door_key": "Castle Door Key"
 }

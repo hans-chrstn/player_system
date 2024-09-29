@@ -13,7 +13,7 @@ enum class CustomToolMaterial(
     private val repairIngredientProvider: Ingredient = Ingredient.empty()
 ) : ToolMaterial {
 
-    RASAKA(265, 2, 6.5f, 2.5f, 16, Ingredient.ofItems(CustomItems.RASAKA_FANG));
+    KASAKA(265, 2, 6.5f, 2.5f, 16, Ingredient.ofItems(CustomItems.KASAKA_FANG));
 
 
 
